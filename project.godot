@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Object",
+"class": &"QuickHint",
+"language": &"GDScript",
+"path": "res://addons/quickhint/quickhint.gd"
+}]
+_global_script_class_icons={
+"QuickHint": ""
+}
+
+[application]
+
+config/name="QuickHint"
+run/main_scene="res://example (NOT NECCESSARY TO IMPORT)/example.tscn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://quickhint_icon.png"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/quickhint/plugin.cfg")
+
+[input]
+
+move_left={
+"deadzone": 0.5,
+"events": []
+}
+jump={
+"deadzone": 0.5,
+"events": []
+}

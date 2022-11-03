@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ma738r4wkj5"]
+
+[ext_resource type="Script" path="res://example (NOT NECCESSARY TO IMPORT)/tester.gd" id="1_f7a4n"]
+
+[node name="Example" type="Node2D"]
+script = ExtResource("1_f7a4n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -67)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2(4, 4)
